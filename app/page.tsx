@@ -1,8 +1,20 @@
 'use client';
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const isDesktop = window.innerWidth > 768;
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
       <main className="flex flex-none text-xs box-border flex-col flex-nowrap gap-50 min-h-content justify-center md:min-h-70 min-h-40 overflow-hidden padding-100 relative width-full bg-[#1A535C] align-center items-center">
