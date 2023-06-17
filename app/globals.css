@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Spline+Sans+Mono:wght@400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  background-color: #4ecdc4;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -16,12 +19,72 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+h1{
+  white-space: pre;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  margin: 0px;
+  padding: 0px;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--framer-text-color, #000);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height:1.2em;
+  text-align: start;
+  font-family: "Monoton", monospace;
+  font-size: 20vw;
+  line-height: 1.1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+h3{
+white-space: pre-wrap;
+word-break: break-word;
+word-wrap: break-word;
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+font-weight: 400;
+letter-spacing: 0;
+text-transform:none;
+line-height: 1.2em;
+font-family: "Monoton", monospace;
+font-size: 38px;
+text-align: left;
+color: rgb(255, 107, 107);
+}
+h2{
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0;
+  text-transform:none;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 20px;
+  }
+.title{
+  font-family: "Monoton", monospace;
+  font-size: 48px;
+  text-align: left;
+  }
+@media only screen and (max-width: 768px) {
+  h3{
+    font-size: 26px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  .title{
+    font-family: "Monoton", monospace;
+    font-size: 30px;
+    text-align: center;
+    }
 }
