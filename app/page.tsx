@@ -40,8 +40,8 @@ export default function Home() {
       </section>
 
 
-      <section className="centent-center items-center bg-[#4ecdc4] flex flex-none flex-col flex-nowrap h-min-content justify-start overflow-hidden p-4 pb-8 md:p-100 w-full ">
-        <main className="max-w-1000 w-full p-4 z-5 pb-8">
+      <section className="centent-center items-center bg-[#4ecdc4] flex flex-none flex-col flex-nowrap h-min-content justify-start overflow-hidden  pb-8 md:p-100 w-full ">
+        <main className="max-w-1000 w-full p-4 z-5">
           <main className="grid flex-none md:grid-cols-3 grid-cols-1 w-full md:mb-8 mb-4 gap-6 "  >
             {isDesktop ? (
               <motion.div
@@ -70,6 +70,10 @@ export default function Home() {
               </div>
             )}
 
+
+          </main>
+          <main className="grid flex-none grid-cols-1 md:grid-cols-3 w-full place-self-center gap-6">
+
             {isDesktop ? (
               <motion.div
                 whileHover={{ scale: 0.9 }} className="drop-shadow-2xl rounded-xl  w-full m-0 md:h-96 h-72  bg-[#ffffff] place-self-center bg-contain bg-center bg-norepeat" style={{ backgroundImage: `url("https://webcdn.protest.eu/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpim.protest.eu%2FProductMedia%2FNOOS%2FMEN%2FSWIMWEAR%2F2711100%2F2711100_846_front.png&quality=90&width=2500")`, backgroundRepeat: 'no-repeat' }}>
@@ -81,9 +85,6 @@ export default function Home() {
 
               </div>
             )}
-          </main>
-          <main className="grid flex-none grid-cols-1 md:grid-cols-3 w-full place-self-center gap-6">
-
             {isDesktop ? (
               <motion.div
                 whileHover={{ scale: 0.9 }} className="drop-shadow-2xl rounded-xl w-full m-0 md:h-96 h-72 md:col-span-2 bg-[#ffffff] place-self-center pt-0 bg-contain bg-center bg-norepeat" style={{ backgroundImage: `url("https://webcdn.protest.eu/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpim.protest.eu%2FProductMedia%2FNOOS%2FMEN%2FSWIMWEAR%2F2711100%2F2711100_650_front.png&quality=90&width=2500")`, backgroundRepeat: 'no-repeat' }}>
@@ -100,7 +101,8 @@ export default function Home() {
         </main>
       </section >
 
-      <section className="centent-center items-center bg-[#4ecdc4] flex flex-none flex-col flex-nowrap h-min-content justify-start overflow-hidden p-4 pb-8 md:p-100 w-full "></section>
+      <section className="centent-center items-center bg-[#4ecdc4] flex flex-none flex-col flex-nowrap h-min-content justify-start overflow-hidden p-4 pb-8 md:p-100 w-full ">
+      </section>
     </>
   )
 
