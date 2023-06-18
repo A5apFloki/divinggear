@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <main className="flex flex-none text-xs box-border flex-col flex-nowrap gap-50 min-h-content justify-center md:min-h-70 min-h-40 overflow-hidden padding-100 relative width-full bg-[#1A535C] align-center items-center">
+      <main className=" flex flex-none text-xs box-border flex-col flex-nowrap gap-50 min-h-content justify-center md:min-h-70 min-h-40 overflow-hidden padding-100 relative width-full bg-[#1A535C] align-center items-center">
         <div className="Header">
           <h1>splash</h1>
         </div>
@@ -30,28 +30,36 @@ export default function Home() {
           <h2 className=" font-spline font-bold text-[#ffffff]">premuim summer wear</h2>
         </div>
       </main>
-
+      <div className="w-full bg-black -scale-y-100 md:h-16 h-0 ">
+        <svg className=" relative md:top-4 top-0   max-w-full  rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,160L120,176C240,192,480,224,720,229.3C960,235,1200,213,1320,202.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+      </div>
       <section className="flex flex-none flex-col gap-50 h-min-content justify-start overflow-hidden md:p-100  p-12 relative w-full items-center flex-nowrap centent-center bg-black">
+
         <div className="items-center flex flex-none md:flex-row flex-col flex-nowrap overflow-visible content-center max-w-full">
           <div className=" w-full md:w-8/12 bg-cover bg-no-repeat bg-center h-36 filter grayscale" style={{ backgroundImage: `url("https://framerusercontent.com/images/zWme0gj8lJnpksAD5Dtx0CuuJs.jpg?scale-down-to=1024")`, backgroundRepeat: 'no-repeat' }} >
             <svg className="relative -bottom-27 h-auto w-52 -left-24" viewBox="0 0 200 200"><path fill="none" stroke="#eb2222" strokeLinecap="round" stroke-miterlimit="10" stroke-width="5" d="M85.358 98.416c0 .681-.199 1.846.818 1.846.688 0 1.712-.908 1.752-1.615.042-.743-.11-1.615-1.052-1.615-.508 0-1.761-.213-1.985.231m24.065-.923c0 1.493-.197 2.531 1.739 2.025 1.393-.364 3.167-1.474 3.167-3.063 0-1.857-1.584-1.73-3.037-1.73-1.403 0-.935 1.708-.935 2.768m-35.981 15.457c4.168 3.741 7.964 7.678 13.344 9.766 3.535 1.372 7.525 1.077 11.241 1.077 4.325 0 7.94-1.235 11.656-3.41 6.811-3.987 14.091-9.688 18.016-16.635 1.677-2.968 2.102-5.811 2.752-9.023M89.204 78.491c-7.811 0-12.649 1.46-18.474 7.177-6.698 6.576-10.219 14.63-11.275 23.732-1.007 8.688-.8 16.556 5.452 23.207 9.892 10.521 26.804 12.85 40.6 11.577 12.06-1.112 24.383-8.465 30.119-19.304 6.533-12.344 6.972-29.255 2.065-42.145-2.709-7.115-7.456-13.21-13.234-18.179-6.326-5.441-14.089-7.371-22.258-8.382-11.135-1.377-23.034-.981-33.004 4.401" /></svg>
-            <svg className="relative -top-24 h-auto w-52 -right-24" viewBox="0 0 200 200"><path fill="none" stroke="#eb2222" strokeLinecap="round" stroke-miterlimit="10" stroke-width="5" d="M43.268 68.491c2.031 4.871 6.198 16.012 6.626 21.612m46.132-47.278c-4.633 13.626-14.781 42.661-18.304 49.793m29.189 13.083c8.427-9.292 26.945-28.707 33.59-32.027m-19.052 54.47c6.86-1.839 23.429-5.865 34.819-7.255m-36.192 29.803c3.387.44 11.664 2.484 17.679 7.133" /></svg>
+            <svg className="relative -top-20 h-auto w-52 -right-24" viewBox="0 0 200 200"><path fill="none" stroke="#eb2222" strokeLinecap="round" stroke-miterlimit="10" stroke-width="5" d="M43.268 68.491c2.031 4.871 6.198 16.012 6.626 21.612m46.132-47.278c-4.633 13.626-14.781 42.661-18.304 49.793m29.189 13.083c8.427-9.292 26.945-28.707 33.59-32.027m-19.052 54.47c6.86-1.839 23.429-5.865 34.819-7.255m-36.192 29.803c3.387.44 11.664 2.484 17.679 7.133" /></svg>
           </div>
           <div>
             <h3 className="p-4 text-center md:text-3xl text-xl">Introducing the Hottest Summer Shorts!</h3>
             <p className="p-4 font-spline text-center text-xs flow-root text-white">Our premium summer swimming shorts will be your beachside go-to, with vibrant colors and perfect fit for the ultimate experience.</p>
           </div>
         </div>
-      </section>
 
-      <section className="flex flex-none items-center  flex-row md:flex-col max-h-min overflow-hidden content-start pb-4 md:p-100 relative w-full pt-4 bg-[#4ecdc4]">
+      </section>
+      <div className="w-full md:h-60 h-20 md:mb-24 mb-8">
+        <svg className=" relative top-88 max-w-full rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,64L48,64C96,64,192,64,288,74.7C384,85,480,107,576,128C672,149,768,171,864,160C960,149,1056,107,1152,96C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+
+      <section className="flex flex-none items-center  flex-row md:flex-col max-h-min overflow-hidden content-start pb-4 md:p-100 relative w-full md:pt-2 bg-[#4ecdc4]">
         <main className=" flex flex-none flex-col  h-min-content content-start overflow-visible relative p-0 w-full max-w-1000 md:items-center">
+
           <header className=" outline-none flex flex-col centent-center flex-shrink-0 transform-none ">
             <h2 className="title self-center w-full text-white place-content-center text-center"> Why Choose Our Shorts</h2>
           </header>
           <section className="content-start items-start flex flex-none flex-col md:flex-row flex-nowrap h-min justify-center overflow-hidden p-0 relative w-full " >
-            <div className="flex flex-col centent-center text-center "><h2 className="font-spline text-[#000000] p-4 ">Our shorts are crafted with quick-dry fabric, ensuring you stay comfy and dry after the swim. The lightweight and stretchable material provides all-day comfort and unhindered movement.</h2></div>
-            <div className="flex flex-col centent-center text-center"><h2 className="font-spline text-[#000000] p-4 " >Our shorts are crafted with quick-dry fabric, ensuring you stay comfy and dry after the swim. The lightweight and stretchable material provides all-day comfort and unhindered movement.</h2></div>
+            <div className="flex flex-col centent-center text-center "><h2 className="font-spline text-[#000000] p-4 ">Our shorts are crafted with quick-dry fabric,ensuring you stay comfy and dry after the swim.The lightweight and stretchable material provides all-day comfort and unhindered movement.</h2></div>
+            <div className="flex flex-col centent-center text-center"><h2 className="font-spline text-[#000000] p-4 " >Our shorts are crafted with quick-dry fabric,ensuring you stay comfy and dry after the swim.The lightweight and stretchable material provides all-day comfort and unhindered movement.</h2></div>
           </section>
         </main>
       </section>
@@ -118,8 +126,90 @@ export default function Home() {
         </main>
       </section >
 
-      <section className="centent-center items-center bg-[#4ecdc4] flex flex-none flex-col flex-nowrap h-min-content justify-start overflow-hidden p-4 pb-8 md:p-100 w-full ">
-      </section>
+
+      <div className="w-full  grid grid-cols-1 place-items-center justify-center">
+        <form className=" md:w-2/3 w-full grid-cols-1 p-8 pt-0 grid  justify-center ">
+          <div className='grid grid-cols-1  md:mb-8'>
+            <h2 className='title self-center w-full text-white place-content-center mb-4' style={{ textAlign: "center" }}>Make An Order Right Now</h2>
+
+          </div>
+          <div className='grid  place-self-center w-full md:w-10/12 grid-cols-1 md:grid-cols-2 gap-0 md:gap-2'>
+            {isDesktop ? (
+              <input type="text" placeholder="First Name" required className="input  w-full text-center  mt-4 md:mb-4 bg-base-200 bg-opacity-65 place-self-center" name="fname" />
+            ) : (
+              <>
+                <label className=" place-self-start block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your first name:</label>
+                <input type="text" placeholder="First Name" required className="input  w-full text-center  mb-4  md:mb-4 bg-base-200 bg-opacity-65 place-self-center" name="fname" />
+              </>
+            )}
+
+            {isDesktop ? (
+              <input type="text" placeholder="Last Name" required className="input   w-full text-center  mb-4 mt-4 bg-base-200 bg-opacity-65 place-self-center" name="lname" />
+            ) : (
+              <>
+                <label className=" place-self-start block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your last name:</label>
+                <input type="text" placeholder="Last Name" required className="input   w-full text-center  mb-4  bg-base-200 bg-opacity-65 place-self-center" name="lname" />
+              </>
+            )}
+
+          </div>
+          <div className='grid  place-self-center w-full md:w-10/12 grid-cols-1 md:grid-cols-2 gap-0 md:gap-2'>
+            {isDesktop ? (
+              <input type="phone" placeholder="Phone" required className="input w-full text-center  mb-4  bg-base-200 bg-opacity-65 place-self-center" name="phone" />
+            ) : (
+              <>
+                <label className=" place-self-start block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your phone number:</label>
+                <input type="phone" placeholder="Phone" required className="input w-full text-center  mb-4  bg-base-200 bg-opacity-65 place-self-center" name="phone" />
+              </>
+            )}
+
+            {isDesktop ? (
+              <input type="text" placeholder="District" required className="input  w-full text-center mb-4 bg-base-200 bg-opacity-65 place-self-center" name="wilaya" />
+            ) : (
+              <>
+                <label className=" place-self-start block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your place of stay:</label>
+                <input type="text" placeholder="District" required className="input  w-full text-center mb-4 bg-base-200 bg-opacity-65 place-self-center" name="wilaya" />
+              </>
+            )}
+          </div>
+          <div className='grid grid-cols-1 place-items-center bg-opacity-20'>
+
+            {isDesktop ? (
+              <select className="select w-full text-center md:w-5/6 mb-4  bg-base-200 bg-opacity-65 place-self-center" required name="subject" placeholder="Subject">
+                <option value="" selected></option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Grey" >Grey</option>
+
+              </select>
+
+            ) : (
+              <>
+                <label className=" place-self-start block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a product:</label>
+                <select className="select w-full text-center md:w-5/6 mb-4  bg-base-200 bg-opacity-65 place-self-center" required name="subject" placeholder="Subject">
+                  <option value="" selected></option>
+                  <option value="Green">Green</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Black">Black</option>
+                  <option value="Grey" >Grey</option>
+                </select>
+              </>
+
+            )}
+
+          </div>
+          <div className='grid  grid-cols-1 place-items-center mt-4 md:mt-8'>
+            <button className="btn btn-active bg-[#0f1b3a] md:w-1/4 w-full" name="subject">Submit</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div className=" w-full h-36">
+
+      </div>
+
     </>
   )
 
